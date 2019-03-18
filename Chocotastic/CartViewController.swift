@@ -55,7 +55,8 @@ class CartViewController: UIViewController {
   }
   
   @IBAction func reset() {
-    ShoppingCart.sharedCart.chocolates = []
+//    ShoppingCart.sharedCart.chocolates = []
+    ShoppingCart.sharedCart.chocolates.value = []
     let _ = navigationController?.popViewController(animated: true)
   }
 }
